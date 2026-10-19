@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+}
+
+/* Quy tắc chung cho tất cả các thẻ .card */
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Thẻ 1: content-box */
+.card:nth-child(1) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+/* Thẻ 2: border-box */
+.card:nth-child(2) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+    color: #333333; /* Màu chữ tối hơn để dễ đọc trên nền vàng */
+}
+
+/* Thẻ 3: border-box */
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+}
